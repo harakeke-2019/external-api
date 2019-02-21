@@ -1,10 +1,10 @@
 import request from 'superagent'
 
-const apiUrl = 'https://swapi.co/api/people'
+const apiUrl = 'https://swapi.co/api/'
 
-export function getPeople () {
-  request
-    .get(apiUrl)
+export function getPeople (id) {
+  return request
+    .get(`${apiUrl}/people/${id}`)
     .then(res => {
       return res.body
     })
@@ -12,3 +12,5 @@ export function getPeople () {
       if (err) throw Error('Sorry the force is not with you...')
     })
 }
+
+//You don't test code that you have brought into your code base, e.g: You wouldn't test that superagent is doing it's job.

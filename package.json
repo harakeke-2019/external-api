@@ -8,7 +8,7 @@
   "license": "ISC",
   "scripts": {
     "client": "webpack-dev-server --hot --inline",
-    "dev": "node server & webpack --watch",
+    "dev": "server & webpack --watch",
     "server": "node server",
     "start": "webpack && node server",
     "test": "jest --watchAll"
@@ -30,6 +30,7 @@
   },
   "dependencies": {
     "express": "^4.16.4",
+    "nodemon": "^1.18.10",
     "superagent": "^4.0.0-beta.5"
   },
   "devDependencies": {

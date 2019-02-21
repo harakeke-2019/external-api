@@ -8,6 +8,6 @@ const server = express()
 server.use(express.json())
 server.use(express.static(path.join(__dirname, './public')))
 
-server.use('/', router)
+server.use('/swapi/people', router)
 
 module.exports = server

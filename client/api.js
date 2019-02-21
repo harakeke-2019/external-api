@@ -2,18 +2,15 @@ import request from 'superagent'
 
 // Could make test that api url is defined.
 
-const apiUrl = 'https://swapi.co/api/'
+const apiUrl = 'https://dog.ceo/api/breeds/image/random'
 
 // Could test that we are concatinating id on end or url.
 
-export function getPeople (id) {
+export function getPuppy () {
   return request
     .get(`${apiUrl}/people/${id}`)
     .then(res => {
       return res.body
-    })
-    .catch(err => {
-      if (err) throw Error('Sorry the force is not with you...')
     })
 }
 

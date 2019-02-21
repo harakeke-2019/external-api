@@ -8,9 +8,12 @@ const apiUrl = 'https://dog.ceo/api/breeds/image/random'
 
 export function getPuppy () {
   return request
-    .get(`${apiUrl}/people/${id}`)
+    .get(apiUrl)
     .then(res => {
       return res.body
+    })
+    .catch(err => {
+      if (err) throw Error('no puupy for you mr/mrs')
     })
 }
 

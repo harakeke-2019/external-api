@@ -14,6 +14,18 @@ export default class people extends React.Component {
       .then(res => {
         this.setState({people: res.body})
       })
+      .catch(err => {
+        console.error('Error:', err)
+      })
   }
 
+  render () {
+    return (
+      <div>
+        <ul>
+          <li>{this.state.people}</li>
+        </ul>
+      </div>
+    )
+  }
 }

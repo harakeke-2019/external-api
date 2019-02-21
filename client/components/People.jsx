@@ -1,7 +1,7 @@
 import React from 'react'
 import {getPeople} from '../api'
 
-export default class people extends React.Component {
+export default class People extends React.Component {
   constructor () {
     super()
     this.state = {
@@ -22,9 +22,7 @@ export default class people extends React.Component {
   render () {
     return (
       <div>
-        <ul>
-          <li>{this.state.people}</li>
-        </ul>
+        <h1>{this.state.people}</h1>
       </div>
     )
   }

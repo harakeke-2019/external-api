@@ -20,6 +20,8 @@ class App extends React.Component {
       })
   }
 
+  // If you want to test that the UI (Divs) are in the right place you would use Enzyme. Because enzyme cares about the markup/UI.
+
   render () {
     return (
       <div>

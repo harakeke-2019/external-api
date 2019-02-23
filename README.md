@@ -1,7 +1,7 @@
 
 - Grabbing an External API. (Client side-only)
 
-- View after running //Yarn client (URL: http://localhost:8080)
+- View after running //Yarn client (URL: http://localhost:8080/#/puppy )
 
 - server on http://localhost:3000. 
 
